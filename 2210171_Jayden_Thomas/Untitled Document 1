@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porforlio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	 <style>
+	    body {
+	      background-image: url('Images/Picture2.svg');
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	      background-position: center;
+	      background-attachment: fixed;
+	      height: 100vh;
+	      margin: 0;
+	    }
+	  </style>
+	<!--Heade-->
+	<header>
+		<div class="logo">Jayden Thomas<span class="cursor">_</span></div>
+			<nav>
+				<a href="#home"><span>01</span> // home</a>
+				<a href="#vision&mission"><spn>02</span> // Vision & Mission Statement</a>
+				<a href="#resume"><span>03</span> // resume</a>
+				<a href="https://github.com/JaydenThomas-007" target="_blank"><span>04</span> // github</a>
+			</nav>
+	</header>
+	</main>
+	<div id="home">
+		<h1 style="text-align: center;">Future Network Engineer</h1>
+		<img src="Images/1754061140174.jpeg"></img>
+		<i><h4 style="text-align: center;">"Confidence is only achieve through actions"</h4></i>
+	</div>
+		<section id="vision&mission">
+		<div class="logo" style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+			<div style="text-align: left;">
+			<h2 style="color: #4db5ff; margin-bottom: 0;"> Vision Statement</h2>
+			<p style="color: #718096; font-size: 1 rem; margin-top: 5px;">To be an icon in the field of networking</p>
+		</div>
+		<div style="text-align: right;">
+			<h2 style="color: #4db5ff; margin-bottom: 0;"> Mission Statement</h2>
+			<p style="color: #718096; font-size: 1 rem; margin-top: 5px;">To inspire others to become members in the field of information technolgy through constant service to others and sharing my knowledge</p>
+			</div>
+		</div>
+		</section>
+		<section id="resume">
+			<h2>resume</h2>
+			<p>Download my full technical experience here:</p>
+			<a href="Images/NetworkResume.pdf" class="btn">[ view_resume.pdf ]</a>
+		</section>
+		<section>
+			<h2>Vision Statement</h2>
+		</section>
+	</main>
+</body>
+</html>
+
+
+v
+body {
+    background-color: #050a10;  
+    color: #cbd5e0;           /* Text */
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px 50px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; /* Adjust as needed */
+  height: 20%;
+}   
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #4fd1ed; /* Teal color from your image */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0; /* Must have this */
+    z-index: 1000;
+}
+
+/* Update this to make the number and text sit better together */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.9rem;
+    display: inline-flex; /* Changed from relative to inline-flex */
+    align-items: baseline;
+    gap: 5px; /* Adds space between number and text */
+}
+
+/* The small numbers */
+nav a span {
+    font-size: 0.6rem;
+    color: #4fd1ed; /* Blue color like your name logo */
+    font-weight: bold;
+}
+section {
+    padding: 50px 10px; /* Space inside each section */
+    min-height: 90vh;   /* Makes each section at least the full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+/* Add this to style the "//" specifically if you put them in the HTML */
+.slash {
+    color: #718096; /* Gray color for the slashes */
+    margin-right: 5px;
+}
+/* Prefix styling */
+h2::before {
+    content: "// ";
+    color: #4fd1ed;
+}
+
+/* Resume Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff0055; /* Vibrant pink accent */
+    text-decoration: none;
+    border: 1px solid #ff0055;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff0055;
+    color: white;
+}
+
+/* The Cursor from your image is purple */
+.cursor {
+    color: #a855f7; 
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }

@@ -1,0 +1,185 @@
+
+/* Webpage body */
+body {
+    background-color: black;   
+    color: #4fd1ed;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Homepade image */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%; 
+  height: 35%;
+}   
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 20px 0;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+    position: fixed;
+    background-color: #0d0d0d;
+    transition: background-color 0.3s ease;
+} 
+.header.dimmed {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker, dimmed background */
+}
+.logo {
+    color: #4fd1ed; /* Teal color from your image */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0; /* Must have this */
+    z-index: 1000;
+    color: white;
+    font-weight: bold;
+}
+
+/* Headerr */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.9rem;
+    display: inline-flex; /* Changed from relative to inline-flex */
+    align-items: baseline;
+    gap: 5px; /* Adds space between number and text */
+}
+
+/* The small numbers */
+nav a span {
+    font-size: 0.6rem;
+    color: #4fd1ed; /* Blue color like your name logo */
+    font-weight: bold;
+}
+
+/* Thew different webpage sections */
+section {
+    padding: 50px 10px; /* Space inside each section */
+    min-height: 90vh;   /* Makes each section at least the full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+/* Add this to style the "//" specifically if you put them in the HTML */
+.slash {
+    color: #718096; /* Gray color for the slashes */
+    margin-right: 5px;
+}
+
+/* Every h1 */
+h1 {
+	color: #4fd1ed;
+	margin-bottom: 0;
+	text-align: center;
+}
+/* Prefix styling */
+h1::before {
+    content: "// ";
+    color: #4fd1ed;
+    margin-bottom: 0;
+}
+
+/* Every h2 */
+h2 {
+	color: #4fd1ed;
+	margin-bottom: 0;
+}
+/* Prefix styling */
+h2::before {
+    content: "// ";
+    color: #4fd1ed;
+    margin-bottom: 0;
+}
+
+/* Every h3 */
+h3 {
+  color: white;
+}
+
+/* Every h4 */
+h4 {
+	text-align: center;
+	color: #4fd1ed;
+}
+
+/* Every paragraph text */
+p {
+	color: white;
+	font-weight: bold;
+	font-size: 1 rem; 
+	margin-top: 5px;
+}
+/* Every ul */
+ul {
+  color: white;
+  font-weight: bold;
+}
+
+/* Every link color */
+a {
+  color: #ff0055;
+}
+/* Resume Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff0055; /* Vibrant pink accent */
+    text-decoration: none;
+    border: 1px solid #ff0055;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.div2 {
+  text-align: right;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn:hover {
+    background: #ff0055;
+    color: white;
+}
+
+/* The Cursor from your image is purple */
+.cursor {
+    color: #a855f7; 
+    animation: blink 1s step-end infinite;
+}
+
+.link {
+    animation: blink 0.5s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+
+.gitimage {
+  max-width: 2%;
+  height: auto;
+}

@@ -156,12 +156,6 @@ a {
     transition: 0.3s;
 }
 
-.div2 {
-  text-align: right;
-  padding: 10px;
-  margin: 10px;
-}
-
 .btn:hover {
     background: #ff0055;
     color: white;
@@ -183,3 +177,19 @@ a {
   max-width: 2%;
   height: auto;
 }
+
+/* --- Global Styles & Resets --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+.btn, .github-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ff0055;
+    color: #ff0055;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover { background: #ff0055; color: white; }
+.git-icon { width: 20px; vertical-align: middle; margin-right: 10px; }

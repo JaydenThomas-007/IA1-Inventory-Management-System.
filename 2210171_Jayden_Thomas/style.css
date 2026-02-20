@@ -1,0 +1,181 @@
+  /* Webpage body */
+body {
+  
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background: radial-gradient(circle at top right, #0d1117, #010409); /* Modern deep space background */
+    color: #c9d1d9;
+    line-height: 1.8;
+}
+
+
+/* Homepade image */
+.homepage-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; 
+  height: 30%;
+}   
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: rgba(13, 13, 13, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;   
+    top: 0;           
+    left: 0;         
+    width: 100%;       
+    z-index: 1000;    
+}
+
+nav a {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #4fd1ed;
+    text-shadow: 0 0 10px rgba(79, 209, 237, 0.5); /* Subtle glow */
+}
+
+
+section {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, rgba(79, 209, 237, 0.2), transparent);
+    border-image-slice: 1;
+    padding: 120px 0;
+}
+
+/* Add this to style the "//" specifically if you put them in the HTML */
+.slash {
+    color: #718096; /* Gray color for the slashes */
+    margin-right: 5px;
+}
+
+/* Every h1 */
+h1 {
+	color: #4fd1ed;
+	margin-bottom: 0;
+	text-align: center;
+}
+/* Prefix styling */
+h1::before {
+    content: "// ";
+    color: #4fd1ed;
+    margin-bottom: 0;
+}
+
+/* Every h2 */
+h2 {
+	color: #4fd1ed;
+	margin-bottom: 0;
+}
+/* Prefix styling */
+h2::before {
+    content: "// ";
+    color: #4fd1ed;
+    margin-bottom: 0;
+}
+
+/* Every h3 */
+h3 {
+  color: white;
+}
+
+/* Every h4 */
+h4 {
+	text-align: center;
+	color: #4fd1ed;
+}
+
+/* Every paragraph text */
+p {
+	color: white;
+	font-weight: bold;
+	font-size: 1 rem; 
+	margin-top: 5px;
+}
+/* Every ul */
+ul {
+  color: white;
+  font-weight: bold;
+}
+
+/* Every link color */
+a {
+  color: #ff0055;
+}
+/* Resume Button Styling */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff0055; /* Vibrant pink accent */
+    text-decoration: none;
+    border: 1px solid #ff0055;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff0055;
+    color: white;
+}
+
+/* The Cursor from your image is purple */
+.cursor {
+    color: #a855f7; 
+    animation: blink 1s step-end infinite;
+}
+
+.link {
+    animation: blink 0.5s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+
+.gitimage {
+  max-width: 2%;
+  height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* --- Global Styles & Resets --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+..btn {
+    border-radius: 6px; /* Slightly rounded for a premium feel */
+    background: transparent;
+    border: 1px solid #ff0055;
+    padding: 12px 24px;
+    box-shadow: inset 0 0 0 0 #ff0055;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff0055;
+    color: white !important;
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.4); /* Exterior glow */
+    transform: translateY(-3px); /* Lifts the button up */
+}
